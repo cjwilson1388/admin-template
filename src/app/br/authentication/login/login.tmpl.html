@@ -1,0 +1,29 @@
+<div layout="row" flex layout-padding layout-fill layout-align="center center">
+  <div flex="40" flex-lg="50" flex-md="70" flex-sm="100">
+    <md-card>
+      <md-toolbar class="padding-20">
+        <div flex layout="row" layout-align="center center">
+          <img ng-src="{{::vm.dashboardSettings.logo}}" alt="{{vm.dashboardSettings.name}}">
+        </div>
+        <div layout="row" layout-align="center center">
+          <h1 class="md-headline">Login</h1>
+        </div>
+      </md-toolbar>
+      <md-content class="md-padding">
+        <md-input-container class="md-block">
+          <input ng-model="auth.email" type="email" placeholder="Email" ng-required="true">
+        </md-input-container>
+        <md-input-container class="md-block" id="password-input">
+          <input type="password" ng-model="auth.password" placeholder="Password">
+        </md-input-container>
+
+        <section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
+          <md-button class="md-raised" ng-click="auth.login()">Login</md-button>
+          <md-button ng-disabled="true" class="md-raised md-primary">Disabled</md-button>
+        </section>
+
+      </md-content>
+
+    </md-card>
+
+  </div>

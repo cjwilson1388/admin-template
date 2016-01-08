@@ -1,0 +1,10 @@
+<md-button ng-click="dashboardMenuItem.toggleDropdownMenu()" class="md-raised md-primary side-menu-link">
+    <md-icon ng-if="::(dashboardMenuItem.item.icon !== undefined)" class="side-menu-icon" md-font-icon="{{::dashboardMenuItem.item.icon}}"></md-icon>
+    <span>{{::dashboardMenuItem.item.name}}</span>
+    <md-icon class="menu-toggle-icon" md-font-icon="zmdi zmdi-chevron-right" ng-class="{ open: dashboardMenuItem.item.open }"></md-icon>
+</md-button>
+<ul class="drop-down-list" ng-show="dashboardMenuItem.item.open">
+    <li ng-repeat="child in dashboardMenuItem.item.children">
+        <dashboard-menu-item item="::child"></dashboard-menu-item>
+    </li>
+</ul>

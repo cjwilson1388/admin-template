@@ -1,0 +1,10 @@
+#OS junk files
+[Tt]humbs.db
+*.DS_Store
+
+node_modules/
+bower_components/
+.tmp/
+
+src/app/br/authentication/auth.service.js
+src/app/br/authentication/user/user.service.js

@@ -1,0 +1,47 @@
+<div layout="row" flex layout-padding layout-fill layout-align="center center">
+  <div flex="40" flex-lg="50" flex-md="70" flex-sm="100">
+    <md-card>
+      <md-toolbar class="padding-20">
+        <div flex layout="row" layout-align="center center">
+          <img ng-src="{{::vm.dashboardSettings.logo}}" alt="{{vm.dashboardSettings.name}}">
+        </div>
+        <div layout="row" layout-align="center center">
+          <h1 class="md-headline">Create New User</h1>
+        </div>
+      </md-toolbar>
+      <md-content class="md-padding">
+        <md-input-container class="md-block">
+          <label>First Name</label>
+          <input ng-model="vm.firstName" type="text">
+        </md-input-container>
+        <md-input-container class="md-block">
+          <label>Last Name</label>
+          <input ng-model="vm.lastName" type="text">
+        </md-input-container>
+        <md-input-container class="md-block">
+          <label>Email</label>
+          <input ng-model="vm.email" type="text">
+        </md-input-container>
+        <md-input-container class="md-block">
+          <label>Password</label>
+          <input type="password" ng-model="vm.password" type="text">
+        </md-input-container>
+
+        <md-input-container class="md-block">
+            <label>Office</label>
+            <md-select ng-model="vm.office">
+              <md-option ng-repeat="office in offices" value="{{office}}">{{office}}</md-option>
+            </md-select>
+        </md-input-container>
+
+        <md-button class="md-raised md-primary" ng-click="vm.createUser()">
+          Register
+        </md-button>
+
+      </md-content>
+
+    </md-card>
+
+  </div>
+
+</div>
