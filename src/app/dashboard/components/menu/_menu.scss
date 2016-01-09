@@ -5,7 +5,7 @@ dashboard-menu {
 }
 
 /* Style for scrollbar on webkit browsers in windows - looks nice already on other operating systems ;) */
-.os-windows dash-menu {
+.os-windows dashboard-menu {
   &::-webkit-scrollbar {
     width: 8px;
     background: rgba(0,0,0,0.1);
@@ -230,7 +230,7 @@ $submenu-overlay: #999999;
 }
 
 // Side menu
-dash-menu {
+dashboard-menu {
   overflow-y: auto;
   z-index: 1;
   transform: translateZ(0);

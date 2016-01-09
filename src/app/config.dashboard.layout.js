@@ -15,7 +15,7 @@
 
         dashboardLayoutProvider.setDefaultOption('contentClass', '');
 
-        dashboardLayoutProvider.setDefaultOption('sideMenuSize', 'full');
+        dashboardLayoutProvider.setDefaultOption('sideMenuSize', 'icon');
 
         dashboardLayoutProvider.setDefaultOption('showToolbar', true);
 

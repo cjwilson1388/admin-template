@@ -3,7 +3,7 @@
 /**
  * @ngdoc function
  * @name AdminController
- * @module triAngular
+ * @module dashboard
  * @kind function
  *
  * @description

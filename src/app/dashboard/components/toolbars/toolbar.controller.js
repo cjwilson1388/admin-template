@@ -6,14 +6,12 @@
         .controller('DefaultToolbarController', DefaultToolbarController);
 
     /* @ngInject */
-    function DefaultToolbarController($scope, $rootScope, $mdMedia, $translate, $state, $element, $filter, $mdUtil, $mdSidenav, $mdToast, $timeout, $document, dashboardBreadcrumbsService, dashboardSettings, dashboardLayout) {
+    function DefaultToolbarController($scope, $rootScope, $mdMedia, $state, $element, $filter, $mdUtil, $mdSidenav, $mdToast, $timeout, $document, dashboardBreadcrumbsService, dashboardSettings, dashboardLayout) {
         var vm = this;
         vm.breadcrumbs = dashboardBreadcrumbsService.breadcrumbs;
         vm.emailNew = false;
-        vm.languages = dashboardSettings.languages;
         vm.openSideNav = openSideNav;
         vm.hideMenuButton = hideMenuButton;
-        vm.switchLanguage = switchLanguage;
         vm.toggleNotificationsTab = toggleNotificationsTab;
         vm.isFullScreen = false;
         vm.fullScreenIcon = 'zmdi zmdi-fullscreen';
@@ -31,7 +29,7 @@
 
 
         function hideMenuButton() {
-            return dashboardLayout.layout.sideMenuSize !== 'hidden' && $mdMedia('gt-md');
+            return dashboardLayout.layout.sideMenuSize !== 'hidden' && $mdMedia('gt-sm');
         }
 
         function toggleNotificationsTab(tab) {

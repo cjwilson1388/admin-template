@@ -81,7 +81,7 @@ th {
 .table-responsive {
   overflow-x: auto;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: $layout-breakpoint-xs) {
     width: 100%;
     margin-bottom: (24px * 0.75);
     overflow-y: hidden;
@@ -124,7 +124,6 @@ th {
           }
         }
       }
-
     }
   }
 }

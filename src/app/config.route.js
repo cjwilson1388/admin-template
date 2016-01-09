@@ -34,9 +34,10 @@
                 };
             }
         });
-        $urlRouterProvider.when('', '/dashboards/analytics');
-        $urlRouterProvider.when('/', '/dashboards/analytics');
-        
+
+        // set default routes when no path specified
+
+
         // always goto 404 if route not found
         $urlRouterProvider.otherwise('/404');
     }

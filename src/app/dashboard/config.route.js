@@ -14,12 +14,24 @@
             controller: 'DefaultLayoutController',
             controllerAs: 'layoutController'
         })
+
+        .state('dashboard-no-scroll', {
+            abstract: true,
+            templateUrl: 'app/dashboard/layouts/default/default-no-scroll.tmpl.html',
+            controller: 'DefaultLayoutController',
+            controllerAs: 'layoutController'
+        })
         .state('dashboard.admin-default', {
             abstract: true,
             views: {
                 sidebarLeft: {
                     templateUrl: 'app/dashboard/components/menu/menu.tmpl.html',
                     controller: 'MenuController',
+                    controllerAs: 'vm'
+                },
+                sidebarRight: {
+                    templateUrl: 'app/dashboard/components/notifications-panel/notifications-panel.tmpl.html',
+                    controller: 'NotificationsPanelController',
                     controllerAs: 'vm'
                 },
                 toolbar: {
@@ -35,5 +47,6 @@
                 }
             }
         });
+
     }
 })();

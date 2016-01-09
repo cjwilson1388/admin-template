@@ -19,12 +19,13 @@
           controller: 'LoginController',
           controllerAs: 'auth'
         })
-        .state('authentication.adduser', {
-          url: '/adduser',
+        .state('dashboard.admin-default.adduser', {
+          url: '/br/adduser',
           templateUrl: 'app/br/authentication/user/add-user.tmpl.html',
           controller: 'AddUserController',
           controllerAs: 'vm'
         })
+
         .state('authentication.profile', {
           url: '/profile',
           templateUrl: 'app/br/authentication/profile/profile.tmpl.html',
@@ -33,12 +34,12 @@
         });
 
         dashboardMenuProvider.addMenu({
-            name: 'MENU.SEED.authentication',
+            name: 'Authentication',
             icon: 'zmdi zmdi-grade',
             type: 'dropdown',
             priority: 1.1,
             children: [{
-                name: 'MENU.authentication.login',
+                name: 'Add User',
                 state: 'authentication.login',
                 type: 'link'
             }]

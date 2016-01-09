@@ -3,7 +3,10 @@ html, body {
 }
 
 // import animate scss
-@import "animate.css-scss/animate.scss";
+@import "animatewithsass/animate.scss";
+
+// variables
+@import "scss/variables";
 
 
 // core
@@ -23,11 +26,11 @@ html, body {
 @import "components/footer/footer.scss";
 @import "components/loader/loader.scss";
 @import "components/menu/menu.scss";
-// @import "components/notifications-panel/notifications-panel.scss";
-// @import "components/table/table.scss";
+@import "components/notifications-panel/notifications-panel.scss";
+@import "components/table/table.scss";
 @import "components/toolbars/toolbar.scss";
-// @import "components/widget/widget.scss";
-// @import "components/wizard/wizard.scss";
+@import "components/widget/widget.scss";
+@import "components/wizard/wizard.scss";
 
 // directives
 
