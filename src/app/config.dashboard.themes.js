@@ -212,6 +212,6 @@
         /**
          *  SET DEFAULT SKIN
          */
-        dashboardSkinsProvider.setSkin('cyan-cloud');
+        dashboardSkinsProvider.setSkin('indigo-island');
     }
 })();

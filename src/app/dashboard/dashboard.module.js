@@ -4,7 +4,7 @@
     angular
         .module('dashboard', [
             'ngMaterial',
-            'dashboard.layouts', 'dashboard.components', 'dashboard.themes', 'dashboard.directives', 'dashboard.router',
+            'dashboard.components', 'dashboard.directives', 'dashboard.layouts', 'dashboard.profiler', 'dashboard.router', 'dashboard.themes',
             // uncomment above to activate the speed profiler
             'ui.router'
         ]);
